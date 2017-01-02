@@ -77,7 +77,7 @@ strippedData3 <- select(strippedData3, -activityNo)
 
 # Output file for the final summarization
 View(strippedData3)
-write.csv(SummarizedData, "strippedData.csv")
+write.csv(strippedData3, "strippedData.csv")
 
 # Independent tidy data set with the average of each variable for each activity and each subject.
 SummarizedData<- strippedData3 %>% 
